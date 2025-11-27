@@ -748,3 +748,8 @@ export const Blur4 = styled.div.attrs({
   );
   filter: blur(250px);
 `;
+
+export const Highlight = styled.span`
+  background-color: rgba(190, 244, 255, 0.4);
+  padding: 2px;
+`;

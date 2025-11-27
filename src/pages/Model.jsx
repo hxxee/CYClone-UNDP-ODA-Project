@@ -119,21 +119,24 @@ const Model = () => {
       <M.Over>Model Overview</M.Over>
       <M.Goal>Goal</M.Goal>
       <M.GDet>
-        This model predicts the impact of ODA (Official Development Assistance)
+        This model predicts the impact of{" "}
+        <M.Highlight>ODA (Official Development Assistance)</M.Highlight>
         <br />
-        and institutional quality on Ethiopia’s Life Expectancy, based on
-        changes in ODA amounts.
+        and <M.Highlight>institutional quality</M.Highlight> on{" "}
+        <M.Highlight>Ethiopia’s Life Expectancy,</M.Highlight> based on changes
+        in <M.Highlight>ODA amounts.</M.Highlight>
         <br />
-        It uses scenario-based predictions to estimate how changes in ODA
-        influence life expectancy.
+        It uses <M.Highlight>scenario-based predictions</M.Highlight> to
+        estimate how changes in ODA influence life expectancy.
       </M.GDet>
       <M.User>Target Users</M.User>
       <M.UDet>
-        This model helps policymakers and development agencies predict the
-        impact of increasing specific
+        This model helps policymakers and development agencies{" "}
+        <M.Highlight>predict</M.Highlight> the impact of increasing specific
         <br />
-        ODA sectors on life expectancy, and compare various policy scenarios
-        based on those predictions.
+        <M.Highlight>ODA sectors</M.Highlight> on life expectancy, and{" "}
+        <M.Highlight>compare various policy scenarios</M.Highlight> based on
+        those predictions.
       </M.UDet>
 
       <M.Descr>Key Model Description</M.Descr>
