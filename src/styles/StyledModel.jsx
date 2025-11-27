@@ -12,18 +12,8 @@ export const Container = styled.div`
   width: 100%;
   flex-shrink: 0;
   align-items: center;
-  background: #000;
-  height: 100%;
-`;
-
-export const Back = styled.div`
-  z-index: 0;
-  position: absolute;
-  width: 100%;
-
-  img {
-    margin-top: 80px;
-  }
+  background: linear-gradient(180deg, #000 41.83%, #011730 56.96%, #000 100%);
+  padding-bottom: 400px;
 `;
 
 export const Nav = styled.div`
@@ -119,4 +109,642 @@ export const Ele = styled.div`
     font-weight: 500;
     line-height: normal;
   }
+`;
+
+export const Title = styled.div`
+  font-family: Pretendard;
+  font-size: 80px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  background: linear-gradient(
+    90deg,
+    rgba(149, 255, 160, 0.8) 0%,
+    rgba(132, 180, 215, 0.9) 48%,
+    #0063ac 100%
+  );
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin-top: 230px;
+  z-index: 1;
+`;
+
+export const FLow = styled.div`
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  margin-top: 130px;
+  z-index: 1;
+`;
+
+export const Set = styled.div`
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: center;
+  justify-content: center;
+  z-index: 1;
+`;
+
+export const FTit = styled.div`
+  display: inline-flex;
+  height: 45px;
+  padding: 10px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  border-radius: 30px;
+  background: #8cc2ff;
+  color: #000;
+  font-family: Pretendard;
+  font-size: 25px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  z-index: 1;
+`;
+
+export const FDet = styled.div`
+  display: inline-flex;
+  height: 115px;
+  padding: 33px 43px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  border-radius: 20px;
+  background: #2b2d32;
+  color: #fff;
+  text-align: center;
+  font-family: Pretendard;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 30px; /* 150% */
+  z-index: 1;
+`;
+
+export const Over = styled.div`
+  color: #fff;
+  font-family: Pretendard;
+  font-size: 60px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 3px;
+  margin-top: 220px;
+  z-index: 1;
+`;
+
+export const Goal = styled.div`
+  color: #8cc2ff;
+  text-align: center;
+  font-family: Pretendard;
+  font-size: 25px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 35px; /* 140% */
+  margin-top: 120px;
+  z-index: 1;
+`;
+
+export const GDet = styled.div`
+  color: #fff;
+  text-align: center;
+  font-family: Pretendard;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 35px; /* 175% */
+  margin-top: 32px;
+  z-index: 1;
+`;
+
+export const User = styled.div`
+  margin-top: 100px;
+  color: #8cc2ff;
+  text-align: center;
+  font-family: Pretendard;
+  font-size: 25px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 35px; /* 140% */
+  z-index: 1;
+`;
+
+export const UDet = styled.div`
+  color: #fff;
+  text-align: center;
+  font-family: Pretendard;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 35px; /* 175% */
+  margin-top: 30px;
+  z-index: 1;
+`;
+
+export const Descr = styled.div`
+  color: #fff;
+  font-family: Pretendard;
+  font-size: 60px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 3px;
+  margin-top: 250px;
+  margin-bottom: 20px;
+  z-index: 1;
+`;
+
+export const Tail = styled.div`
+  margin-top: 80px;
+  color: #8cc2ff;
+  text-align: center;
+  font-family: Pretendard;
+  font-size: 25px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 35px; /* 140% */
+  z-index: 1;
+`;
+
+export const Key = styled.div`
+  display: flex;
+  width: 1150px;
+  height: 280px;
+  padding: 36px 20px;
+  align-items: center;
+  justify-content: center;
+  border-radius: 25px;
+  background: rgba(255, 255, 255, 0.1);
+  margin-top: 60px;
+  flex-direction: column;
+  z-index: 1;
+
+  #title {
+    color: #fff;
+    text-align: center;
+    font-family: Pretendard;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    margin-bottom: 24px;
+  }
+
+  #detail {
+    margin-left: 16px;
+    color: #fff;
+    font-family: Pretendard;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 40px;
+    letter-spacing: 0.4px;
+  }
+`;
+
+export const Model = styled.div`
+  margin-top: 50px;
+  display: flex;
+  width: 1150px;
+  height: 360px;
+  padding: 36px;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 25px;
+  background: rgba(255, 255, 255, 0.1);
+  z-index: 1;
+
+  #title {
+    color: #fff;
+    text-align: center;
+    font-family: Pretendard;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    margin-bottom: 24px;
+  }
+
+  #detail {
+    margin-left: 16px;
+    color: #fff;
+    font-family: Pretendard;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 40px;
+    letter-spacing: 0.4px;
+  }
+`;
+
+export const TBox = styled.div`
+  margin-top: 50px;
+  display: flex;
+  width: 1150px;
+  height: 310px;
+  padding: 36px 20px;
+  align-items: center;
+  border-radius: 25px;
+  background: rgba(255, 255, 255, 0.1);
+  flex-direction: column;
+  z-index: 1;
+
+  #detail {
+    margin-left: 16px;
+    color: #fff;
+    font-family: Pretendard;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 40px;
+    letter-spacing: 0.4px;
+  }
+`;
+
+export const Dash = styled.div`
+  margin-top: 250px;
+  color: #fff;
+  font-family: Pretendard;
+  font-size: 60px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 3px;
+  margin-bottom: 20px;
+  z-index: 1;
+`;
+
+export const T1 = styled.div`
+  margin-top: 80px;
+  color: #8cc2ff;
+  text-align: center;
+  font-family: Pretendard;
+  font-size: 25px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 35px; /* 140% */
+  z-index: 1;
+`;
+
+export const B1 = styled.div`
+  border-radius: 25px;
+  background: rgba(255, 255, 255, 0.1);
+  margin-top: 60px;
+  display: flex;
+  width: 1150px;
+  height: 245px;
+  padding: 39px 18px 38px 18px;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  z-index: 1;
+
+  #title {
+    color: #fff;
+    text-align: center;
+    font-family: Pretendard;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+  }
+
+  #detail {
+    color: #fff;
+    font-family: Pretendard;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 40px;
+    letter-spacing: 0.4px;
+    margin-top: 24px;
+    margin-left: 16px;
+  }
+`;
+
+export const B2 = styled.div`
+  width: 1150px;
+  display: flex;
+  flex-direction: row;
+  height: 290px;
+  padding: 45px 0;
+  align-items: center;
+  border-radius: 25px;
+  background: rgba(255, 255, 255, 0.1);
+  margin-top: 60px;
+  justify-content: center;
+  z-index: 1;
+
+  ul {
+    margin-left: 16px;
+    color: #fff;
+    font-family: Pretendard;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 40px;
+    letter-spacing: 0.4px;
+  }
+`;
+
+export const B3 = styled.div`
+  display: flex;
+  width: 1150px;
+  height: 220px;
+  padding: 49px 31px 48px 16px;
+  align-items: center;
+  border-radius: 25px;
+  background: rgba(255, 255, 255, 0.1);
+  flex-direction: column;
+  margin-top: 60px;
+  z-index: 1;
+
+  ul {
+    color: #fff;
+    font-family: Pretendard;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 40px;
+    letter-spacing: 0.4px;
+  }
+
+  div {
+    margin-right: auto;
+    margin-left: 27px;
+    color: #fff;
+    font-family: Pretendard;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 40px; /* 200% */
+    letter-spacing: 0.4px;
+  }
+`;
+
+export const Example = styled.div`
+  color: #fff;
+  font-family: Pretendard;
+  font-size: 60px;
+  font-style: normal;
+  font-weight: 700;
+  z-index: 1;
+  line-height: normal;
+  letter-spacing: 3px;
+  margin-top: 250px;
+  margin-bottom: 20px;
+`;
+
+export const B4 = styled.div`
+  display: flex;
+  width: 1150px;
+  height: 245px;
+  padding: 43px 370px 42px 16px;
+  align-items: center;
+  z-index: 1;
+  border-radius: 25px;
+  background: rgba(255, 255, 255, 0.1);
+  margin-top: 60px;
+  flex-direction: column;
+
+  ul {
+    color: #fff;
+    font-family: Pretendard;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 40px;
+    letter-spacing: 0.4px;
+  }
+`;
+
+export const B5 = styled.div`
+  margin-top: 60px;
+  display: flex;
+  width: 1150px;
+  height: 292px;
+  padding: 46px 62px 46px 16px;
+  align-items: center;
+  flex-direction: column;
+  border-radius: 25px;
+  z-index: 1;
+  background: rgba(255, 255, 255, 0.1);
+
+  ul {
+    color: #fff;
+    font-family: Pretendard;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 40px;
+    letter-spacing: 0.4px;
+    width: 1072px;
+    flex-shrink: 0;
+    margin-left: 52px;
+  }
+`;
+
+export const B6 = styled.div`
+  margin-top: 60px;
+  display: flex;
+  width: 1150px;
+  z-index: 1;
+  height: 245px;
+  padding: 43px 45px 42px 45px;
+  justify-content: center;
+  align-items: center;
+  border-radius: 25px;
+  background: rgba(255, 255, 255, 0.1);
+  flex-direction: column;
+
+  div {
+    color: #fff;
+    font-family: Pretendard;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 40px;
+    letter-spacing: 0.4px;
+  }
+`;
+
+export const Limit = styled.div`
+  margin-top: 250px;
+  margin-bottom: 20px;
+  color: #fff;
+  font-family: Pretendard;
+  font-size: 60px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  z-index: 1;
+  letter-spacing: 3px;
+`;
+
+export const B7 = styled.div`
+  display: flex;
+  width: 1150px;
+  height: 245px;
+  padding: 43px 30px 42px 16px;
+  align-items: center;
+  border-radius: 25px;
+  background: rgba(255, 255, 255, 0.1);
+  z-index: 1;
+  flex-direction: column;
+  margin-top: 60px;
+
+  ul {
+    color: #fff;
+    font-family: Pretendard;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 40px;
+    letter-spacing: 0.4px;
+    width: 1104px;
+    margin-left: 52px;
+  }
+`;
+
+export const B8 = styled.div`
+  margin-top: 60px;
+  flex-direction: column;
+  display: flex;
+  width: 1150px;
+  height: 292px;
+  z-index: 1;
+  padding: 66px 62px 66px 16px;
+  align-items: center;
+  border-radius: 25px;
+  background: rgba(255, 255, 255, 0.1);
+
+  ul {
+    color: #fff;
+    font-family: Pretendard;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 40px;
+    letter-spacing: 0.4px;
+    width: 1072px;
+    flex-shrink: 0;
+    margin-left: 52px;
+  }
+`;
+
+export const B9 = styled.div`
+  margin-top: 60px;
+  flex-direction: column;
+  display: flex;
+  width: 1150px;
+  height: 220px;
+  padding: 50px 74px 50px 16px;
+  z-index: 1;
+  align-items: center;
+  border-radius: 25px;
+  background: rgba(255, 255, 255, 0.1);
+
+  ul {
+    color: #fff;
+    font-family: Pretendard;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 40px; /* 200% */
+    letter-spacing: 0.4px;
+    width: 1060px;
+    flex-shrink: 0;
+    margin-left: 52px;
+  }
+`;
+
+export const Blur1 = styled.div.attrs({
+  "aria-hidden": "true",
+  role: "presentation",
+})`
+  width: 1157.85px;
+  height: 1640.351px;
+  z-index: 0;
+  pointer-events: none;
+  position: absolute;
+  top: -529.19px;
+  left: -801px;
+  border-radius: 1640.351px;
+  background: conic-gradient(
+    from 2deg at 50% 50%,
+    rgba(0, 72, 153, 0.7) 70.49995422363281deg,
+    rgba(149, 185, 255, 0.7) 192.11538791656494deg,
+    rgba(71, 112, 141, 0.7) 310.4999613761902deg
+  );
+  filter: blur(250px);
+`;
+
+export const Blur2 = styled.div.attrs({
+  "aria-hidden": "true",
+  role: "presentation",
+})`
+  width: 1508.275px;
+  height: 1898.938px;
+  transform: rotate(15.581deg);
+  z-index: 0;
+  pointer-events: none;
+  position: absolute;
+  top: 855.82px;
+  right: -1288px;
+  border-radius: 1640.351px;
+  background: conic-gradient(
+    from 194deg at 47.53% 55.37%,
+    rgba(0, 72, 153, 0.7) 66.005499958992deg,
+    rgba(53, 208, 255, 0.7) 144.62188839912415deg,
+    rgba(114, 193, 255, 0.7) 204.23077583312988deg,
+    rgba(149, 185, 255, 0.7) 318.87834548950195deg
+  );
+  filter: blur(300px);
+`;
+
+export const Blur3 = styled.div.attrs({
+  "aria-hidden": "true",
+  role: "presentation",
+})`
+  width: 1348.478px;
+  height: 1667.03px;
+  transform: rotate(0.823deg);
+  z-index: 0;
+  pointer-events: none;
+  position: absolute;
+  top: 3737px;
+  left: -600px;
+  border-radius: 1667.03px;
+  background: conic-gradient(
+    from 2deg at 50% 50%,
+    rgba(0, 72, 153, 0.7) 70.49995422363281deg,
+    rgba(149, 185, 255, 0.7) 192.11538791656494deg,
+    rgba(215, 149, 255, 0.7) 310.4999613761902deg
+  );
+  filter: blur(250px);
+`;
+
+export const Blur4 = styled.div.attrs({
+  "aria-hidden": "true",
+  role: "presentation",
+})`
+  width: 735.214px;
+  height: 1370.731px;
+  z-index: 0;
+  pointer-events: none;
+  position: absolute;
+  top: 4472px;
+  left: -212px;
+  border-radius: 1370.731px;
+  background: conic-gradient(
+    from 2deg at 50% 50%,
+    rgba(0, 72, 153, 0.7) 70.49995422363281deg,
+    rgba(149, 185, 255, 0.7) 192.11538791656494deg,
+    rgba(215, 149, 255, 0.7) 310.4999613761902deg
+  );
+  filter: blur(250px);
 `;

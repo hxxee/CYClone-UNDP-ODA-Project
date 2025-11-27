@@ -4,11 +4,13 @@ import Main from "./pages/Main";
 import Project from "./pages/Project";
 import Model from "./pages/Model";
 import About from "./pages/About";
+import ScrollToTop from "./pages/ScrollToTop";
 
 function App() {
   return (
     <BrowserRouter>
       <GlobalStyle />
+      <ScrollToTop />
       <Routes>
         <Route path="/" element={<Main />} />
         <Route path="/project" element={<Project />} />
