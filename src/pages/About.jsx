@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import * as A from "../styles/StyledAbout";
 import { Highlight } from "../styles/StyledModel";
 import { useNavigate } from "react-router-dom";
@@ -11,8 +11,45 @@ const About = () => {
   const goAbout = () => navigate(`/about`);
   const goModel = () => navigate(`/model`);
 
+  const [activeIndex, setActiveIndex] = useState(null);
+
+  const profiles = [
+    {
+      img: "/images/wonkyo.jpg",
+      name: "Choi Wonkyo",
+      desc: {
+        intro: "Team Leader & Visualization Lead",
+        body: "Department of Data Science, Dongduk Women's University (Expected Graduation: Feb 2027)",
+        footer:
+          "I am a data science student at Dongduk Women's University and the team leader for this project. I led the project planning and coordination, designed interactive dashboards, and visualized the effects of Official Development Assistance (ODA) on life expectancy in Ethiopia. My role involved translating complex econometric and machine-learning results into clear, actionable insights for policy simulation and presentation.",
+      },
+    },
+    {
+      img: "/images/eunjun.jpg",
+      name: "Choi Eunjun",
+      desc: {
+        intro: "Data Analysis & Modeling Researcher",
+        body: "Department of Data Science, Dongduk Women's University (Senior Year)",
+        footer:
+          "I am a senior student majoring in Data Science at Dongduk Women’s University. In this project, I was responsible for analyzing data and conducting simulations using econometric and machine-learning models to study the relationship between Official Development Assistance (ODA) and life expectancy. Based on this research, I quantitatively evaluated how development aid contributes to improvements in life expectancy.",
+      },
+    },
+    {
+      img: "/images/hyewon.png",
+      name: "Yang Hyewon",
+      desc: {
+        intro: "Data Analysis & Modeling Researcher",
+        body: "Department of Data Science & Department of Computer Science, Dongduk Women’s University (Senior Year)",
+        footer:
+          "I am a senior student double majoring in Data Science and Computer Science at Dongduk Women’s University. In this project, I was responsible for analyzing the relationship between Official Development Assistance (ODA) and development outcomes through time-lagged correlation and predictive modeling.",
+      },
+    },
+  ];
+
   return (
     <A.Container>
+      <A.Blur1 />
+      <A.Blur2 />
       <A.Nav>
         <A.Logo>
           <A.CYC>
@@ -152,36 +189,35 @@ const About = () => {
 
       <A.Semi>About us</A.Semi>
       <A.Profile>
-        <A.Card>
-          <A.Prof className="image-wrapper">
-            <img
-              src={`${process.env.PUBLIC_URL}/images/wonkyo.jpg`}
-              alt="wonkyo"
-            />
-            <div>Choi Wonkyo</div>
-          </A.Prof>
-          <div className="text-wrapper"></div>
-        </A.Card>
-        <A.Card>
-          <A.Prof>
-            <img
-              src={`${process.env.PUBLIC_URL}/images/eunjun.jpg`}
-              alt="eunjun"
-            />
-            <div>Choi Eunjun</div>
-          </A.Prof>
-          <div className="text-wrapper"></div>
-        </A.Card>
-        <A.Card>
-          <A.Prof>
-            <img
-              src={`${process.env.PUBLIC_URL}/images/hyewon.png`}
-              alt="hyewon"
-            />
-            <div>Yang Hyewon</div>
-          </A.Prof>
-          <div className="text-wrapper"></div>
-        </A.Card>
+        {profiles.map((p, i) => (
+          <A.Card
+            key={i}
+            onMouseEnter={() => setActiveIndex(i)}
+            onMouseLeave={() => setActiveIndex(null)}
+            active={activeIndex === i}
+            shrink={activeIndex !== null && activeIndex !== i}
+          >
+            <A.Prof>
+              <img
+                src={p.img}
+                alt={p.name}
+                active={activeIndex === i}
+                shrink={activeIndex !== null && activeIndex !== i}
+              />
+              <div>{p.name}</div>
+            </A.Prof>
+
+            {/* 상세정보 텍스트 */}
+            <A.DetailText active={activeIndex === i}>
+              <p id="intro">{p.desc.intro}</p>
+              <p id="body">{p.desc.body}</p>
+              <p id="footer">{p.desc.footer}</p>
+            </A.DetailText>
+
+            {/* 오버레이 */}
+            <A.Overlay active={activeIndex === i} />
+          </A.Card>
+        ))}
       </A.Profile>
     </A.Container>
   );

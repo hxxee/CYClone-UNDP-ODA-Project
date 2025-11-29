@@ -355,16 +355,11 @@ const Model = () => {
           <strong>“Health ODA</strong> and <strong>Social/Env ODA</strong>{" "}
           combined result in not only{" "}
           <strong>short-term life expectancy increases</strong>, but also a
-          <br />
           significant <strong>long-term health improvement effect</strong>{" "}
           driven by <strong>Health ODA’s lag effect</strong> after 2 years. The{" "}
-          <strong>2-year</strong>
-          <br />
-          <strong>cumulative effect</strong> shows <strong>+0.13 years</strong>{" "}
-          for Health ODA alone, with
-          <strong>+0.18~0.20 years</strong> from the combined
-          <br />
-          scenario.”
+          <strong>2-year cumulative effect</strong> shows{" "}
+          <strong>+0.13 years</strong> for Health ODA alone, with
+          <strong>+0.18~0.20 years</strong> from the combined scenario.”
         </div>
       </M.B6>
 
@@ -419,6 +414,13 @@ const Model = () => {
           <li>Time-Series Model Enhancements</li>
         </ul>
       </M.B9>
+
+      <M.Button
+        style={{ cursor: "pointer" }}
+        onClick={() => window.open("여기다가입력하시면돼요")}
+      >
+        Run Simulation
+      </M.Button>
     </M.Container>
   );
 };

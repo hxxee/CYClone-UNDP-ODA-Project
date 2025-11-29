@@ -174,7 +174,8 @@ export const Set = styled.div`
 export const FTit = styled.div`
   width: 290px;
   height: 66px;
-  border-radius: 10px;
+  border-radius: 10px 10px 0 0;
+  border: 2px solid #4169e1;
   background: #b8d9ff;
   color: #000;
   font-family: Pretendard;
@@ -193,9 +194,10 @@ export const FDet = styled.div`
   margin-top: -11px;
   width: 290px;
   height: 142px;
-  border-radius: 10px;
-  background: #2b2d32;
-  color: #fff;
+  border-radius: 0 0 10px 10px;
+  border: 2px solid #4169e1;
+  background: #fff;
+  color: #000;
   text-align: center;
   font-family: Pretendard;
   font-size: 20px;
@@ -416,7 +418,7 @@ export const T1 = styled.div`
   font-family: Pretendard;
   font-size: 30px;
   font-style: normal;
-  font-weight: 500;
+  font-weight: 700;
   line-height: 35px; /* 140% */
   z-index: 1;
 `;
@@ -647,11 +649,14 @@ export const B7 = styled.div`
   display: flex;
   width: 1150px;
   height: 245px;
-  padding: 43px 30px 42px 16px;
+  padding-left: 16px;
   align-items: center;
   border-radius: 25px;
   background: rgba(255, 255, 255, 0.1);
   z-index: 1;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
   flex-direction: column;
   margin-top: 30px;
   margin-bottom: 5px;
@@ -665,7 +670,11 @@ export const B7 = styled.div`
     line-height: 40px;
     letter-spacing: 0.4px;
     width: 1104px;
-    margin-left: 52px;
+    margin-left: 32px;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    text-align: left;
   }
 `;
 
@@ -677,8 +686,9 @@ export const B8 = styled.div`
   width: 1150px;
   height: 292px;
   z-index: 1;
-  padding: 66px 62px 66px 16px;
-  align-items: center;
+  padding-left: 16px;
+  justify-content: center;
+  align-items: start;
   border-radius: 25px;
   background: rgba(255, 255, 255, 0.1);
 
@@ -692,7 +702,10 @@ export const B8 = styled.div`
     letter-spacing: 0.4px;
     width: 1072px;
     flex-shrink: 0;
-    margin-left: 52px;
+    margin-left: 32px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
   }
 `;
 
@@ -812,4 +825,31 @@ export const Blur4 = styled.div.attrs({
 export const Highlight = styled.span`
   background-color: rgba(190, 244, 255, 0.4);
   padding: 2px;
+`;
+
+export const Button = styled.div`
+  color: #fff;
+  text-align: center;
+  font-family: Pretendard;
+  font-size: 25px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  letter-spacing: 0.75px;
+  display: flex;
+  width: 400px;
+  height: 60px;
+  padding: 10px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  border-radius: 50px;
+  background: #004899;
+  margin-top: 200px;
+
+  &:hover {
+    box-shadow: 0 0 20px 10px rgba(0, 72, 153, 0.5);
+    backdrop-filter: blur(4px); /* 약간의 블러 효과 */
+    transform: scale(1.03); /* 약간 커지는 효과 */
+  }
 `;

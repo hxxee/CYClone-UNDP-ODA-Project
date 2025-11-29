@@ -256,24 +256,58 @@ export const Profile = styled.div`
 `;
 
 export const Card = styled.div`
+  position: relative;
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
+  align-items: center;
+  transition: all 0.35s ease;
+  cursor: pointer;
+
+  /* 선택된 Card → 커짐 */
+  ${({ active }) =>
+    active &&
+    `
+        transform: scale(1.33); /* 372 → 495 정도로 커짐 */
+  `}
+
+  /* 선택되지 않은 Card → 작아짐 */
+  ${({ shrink }) =>
+    shrink &&
+    `
+        transform: scale(0.85);
+        opacity: 0.8;
+  `}
 `;
 
 export const Prof = styled.div`
-  width: 372px;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   gap: 20px;
+  transition: all 0.35s ease;
 
   img {
     width: 372px;
     height: 395px;
     border-radius: 30px;
-    background: url(<path-to-image>) lightgray 50% / cover no-repeat;
     object-fit: cover;
+    transition: all 0.35s ease;
+
+    /* 선택된 카드 → 이미지 확대 */
+    ${({ active }) =>
+      active &&
+      `
+        transform: scale(1.33); /* 372 → 495 정도로 커짐 */
+      `}
+
+    /* 선택되지 않은 카드 → 이미지 축소 */
+    ${({ shrink }) =>
+      shrink &&
+      `
+        transform: scale(0.85);
+        opacity: 0.8;
+      `}
   }
 
   div {
@@ -283,7 +317,129 @@ export const Prof = styled.div`
     font-size: 30px;
     font-style: normal;
     font-weight: 600;
-    line-height: normal;
     letter-spacing: 1.5px;
+    z-index: 5;
   }
+`;
+
+export const Overlay = styled.div`
+  position: absolute;
+  top: 0;
+  width: 372px; /* 이미지 기본 width */
+  height: 395px; /* 이미지 기본 height */
+  border-radius: 30px;
+  background: rgba(0, 0, 0, 0.6);
+  pointer-events: none;
+
+  transform: scale(${({ active }) => (active ? 1 : 1)});
+  transform-origin: center;
+
+  opacity: ${({ active }) => (active ? 1 : 0)};
+  transition: opacity 0.35s ease, transform 0.35s ease;
+`;
+
+export const DetailText = styled.div`
+  position: absolute;
+  width: 460px;
+  display: flex;
+  height: 525px;
+  flex-direction: column;
+  align-items: start;
+  // justify-content: center;
+  z-index: 20;
+  padding: 0;
+  margin-top: -30px;
+  margin-left: 11px;
+
+  opacity: ${({ active }) => (active ? 1 : 0)};
+  transform: ${({ active }) =>
+    active
+      ? "translateY(0) scale(0.75)" // 📌 Card가 1.33배니까 1/1.33로 보정
+      : "translateY(15px) scale(1)"};
+  transform-origin: center;
+  transition: all 0.35s ease;
+
+  #intro {
+    color: #fff;
+    font-family: Pretendard;
+    font-size: 25px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    letter-spacing: 1.375px;
+    text-align: left;
+  }
+
+  #body {
+    color: #fff;
+    font-family: Pretendard;
+    font-size: 19px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 28.6px; /* 130% */
+    letter-spacing: 1.1px;
+    margin-top: 20px;
+    text-align: left;
+  }
+
+  #footer {
+    color: #fff;
+    font-family: Pretendard;
+    font-size: 19px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 28px; /* 127.273% */
+    letter-spacing: 0.44px;
+    margin-top: 30px;
+    text-align: left;
+  }
+`;
+
+export const Blur1 = styled.div.attrs({
+  "aria-hidden": "true",
+  role: "presentation",
+})`
+  width: 2064.508px;
+  height: 1792.637px;
+  transform: rotate(-178.332deg);
+  z-index: 0;
+  pointer-events: none;
+  position: absolute;
+  top: 231px;
+  right: 0;
+  border-radius: 2064.508px;
+  background: conic-gradient(
+    from 180deg at 50% 50%,
+    rgba(0, 72, 153, 0.4) 107.30769395828247deg,
+    rgba(149, 185, 255, 0.8) 233.6249542236328deg,
+    rgba(215, 149, 255, 0.8) 310.4999613761902deg
+  );
+  filter: blur(145.06704711914062px);
+  opacity: 0.6; /* 투명도 더 높게 */
+`;
+
+export const Blur2 = styled.div.attrs({
+  "aria-hidden": "true",
+  role: "presentation",
+})`
+  width: 1454.479px;
+  height: 1947.921px;
+  transform: rotate(-66.585deg);
+  z-index: 0;
+  pointer-events: none;
+  position: absolute;
+  top: 382px;
+  left: 10%;
+  border-radius: 1947.921px;
+  background: conic-gradient(
+    from 180deg at 50% 50%,
+    rgba(0, 72, 153, 0.3) 0deg,
+    #004899 70.49995422363281deg,
+    #38608c 162.3749577999115deg,
+    #95b9ff 233.6249542236328deg,
+    rgba(186, 149, 255, 0.8) 310.4999613761902deg
+  );
+  mix-blend-mode: overlay;
+  filter: blur(119.81165313720703px);
+  opacity: 0.6; /* 투명도 더 높게 */
 `;
