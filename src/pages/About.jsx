@@ -103,7 +103,7 @@ const About = () => {
       <A.Det_70>
         Our team participated in the{" "}
         <Highlight style={{ fontWeight: "700" }}>UNDP 2025 Data Dive</Highlight>{" "}
-        and was selected as one of the{" "}
+        and was selected as one of the two{" "}
         <Highlight style={{ fontWeight: "700" }}>Winner teams.</Highlight>
       </A.Det_70>
       <A.Det_40>
@@ -119,7 +119,7 @@ const About = () => {
         to realistic development decisions.
       </A.Det_40>
 
-      <A.Semi>About Our work</A.Semi>
+      <A.Semi>About Our Work</A.Semi>
       <A.Det_70>
         Our project focuses on analyzing{" "}
         <strong>ODA (Official Development Assistance) effectiveness</strong> and

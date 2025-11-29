@@ -320,7 +320,9 @@ export const Key = styled.div`
   }
 
   #detail {
-    // margin-left: 16px;
+    width: 100%;
+    text-align: left;
+    margin-left: 52px;
     color: #fff;
     font-family: Pretendard;
     font-size: 20px;
@@ -356,7 +358,9 @@ export const Model = styled.div`
   }
 
   #detail {
-    // margin-left: 16px;
+    width: 100%;
+    text-align: left;
+    margin-left: 52px;
     color: #fff;
     font-family: Pretendard;
     font-size: 20px;
@@ -375,19 +379,19 @@ export const TBox = styled.div`
   display: flex;
   width: 1150px;
   height: 325px;
-  padding: 0x 20px;
-  align-items: center;
+  padding-left: 48px;
+  flex-direction: column;
+  align-items: start;
   border-radius: 25px;
   background: rgba(255, 255, 255, 0.1);
-  flex-direction: column;
   z-index: 1;
   justify-content: center;
 
   #detail {
     display: flex;
+    text-align: left;
     flex-direction: column;
     gap: 20px;
-    margin-left: 16px;
     color: #fff;
     font-family: Pretendard;
     font-size: 20px;
@@ -562,8 +566,9 @@ export const B4 = styled.div`
   display: flex;
   width: 1150px;
   height: 245px;
-  padding: 43px 370px 42px 16px;
-  align-items: center;
+  padding-left: 16px;
+  align-items: start;
+  justify-content: center;
   z-index: 1;
   border-radius: 25px;
   background: rgba(255, 255, 255, 0.1);
@@ -579,6 +584,7 @@ export const B4 = styled.div`
     font-weight: 500;
     line-height: 40px;
     letter-spacing: 0.4px;
+    margin-left: 32px;
   }
 `;
 
@@ -587,8 +593,9 @@ export const B5 = styled.div`
   display: flex;
   width: 1150px;
   height: 292px;
-  padding: 46px 62px 46px 16px;
-  align-items: center;
+  padding-left: 16px;
+  align-items: start;
+  justify-content: center;
   flex-direction: column;
   border-radius: 25px;
   z-index: 1;
@@ -604,7 +611,7 @@ export const B5 = styled.div`
     letter-spacing: 0.4px;
     width: 1072px;
     flex-shrink: 0;
-    margin-left: 52px;
+    margin-left: 32px;
   }
 `;
 
@@ -614,7 +621,7 @@ export const B6 = styled.div`
   width: 1150px;
   z-index: 1;
   height: 245px;
-  padding: 43px 45px 42px 45px;
+  padding: 0 45px;
   justify-content: center;
   align-items: center;
   border-radius: 25px;
@@ -715,9 +722,10 @@ export const B9 = styled.div`
   display: flex;
   width: 1150px;
   height: 220px;
-  padding: 50px 74px 50px 16px;
+  padding-left: 16px;
+  justify-content: center;
   z-index: 1;
-  align-items: center;
+  align-items: start;
   border-radius: 25px;
   background: rgba(255, 255, 255, 0.1);
 
@@ -731,7 +739,7 @@ export const B9 = styled.div`
     letter-spacing: 0.4px;
     width: 1060px;
     flex-shrink: 0;
-    margin-left: 52px;
+    margin-left: 32px;
   }
 `;
 
