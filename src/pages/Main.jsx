@@ -90,7 +90,13 @@ const Main = () => {
       </M.OutDet>
       <M.Dev>
         <M.Component>
-          <M.Img></M.Img>
+          <M.Img>
+            <img
+              src={`${process.env.PUBLIC_URL}/images/first.png`}
+              id="first"
+              alt="first"
+            />
+          </M.Img>
           <M.Frame>
             <M.CTit>Life Simulation</M.CTit>
             <M.CDet>
@@ -103,7 +109,13 @@ const Main = () => {
           </M.Frame>
         </M.Component>
         <M.Component>
-          <M.Img></M.Img>
+          <M.Img>
+            <img
+              src={`${process.env.PUBLIC_URL}/images/second.png`}
+              id="second"
+              alt="first"
+            />
+          </M.Img>
           <M.Frame>
             <M.CTit>Impact Comparison</M.CTit>
             <M.CDet>
@@ -116,7 +128,13 @@ const Main = () => {
           </M.Frame>
         </M.Component>
         <M.Component>
-          <M.Img></M.Img>
+          <M.Img>
+            <img
+              src={`${process.env.PUBLIC_URL}/images/third.png`}
+              id="third"
+              alt="first"
+            />
+          </M.Img>
           <M.Frame>
             <M.CTit>Optimal Allocation</M.CTit>
             <M.CDet>

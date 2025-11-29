@@ -235,15 +235,19 @@ export const Outcomes = styled.div`
 `;
 
 export const OutDet = styled.div`
-  color: #fff;
+  // color: #fff;
   text-align: center;
   font-family: Pretendard;
   font-size: 25px;
   font-style: normal;
   font-weight: 500;
   line-height: normal;
-  margin-top: 100px;
+  margin-top: 33.33px;
   z-index: 2;
+  background: linear-gradient(90deg, #c2c2c2 0%, #757575 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 `;
 
 export const Dev = styled.div`
@@ -265,10 +269,31 @@ export const Component = styled.div`
 export const Img = styled.div`
   width: 200px;
   height: 125px;
-  background: #d9d9d9;
+  // background: #d9d9d9;
   position: absolute;
   margin-top: -44px;
   z-index: 3;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+
+  #first {
+    width: 111px;
+    height: 111px;
+    aspect-ratio: 1/1;
+  }
+
+  #second {
+    width: 113px;
+    height: 133px;
+    aspect-ratio: 113/133;
+  }
+
+  #third {
+    width: 146px;
+    height: 133px;
+    aspect-ratio: 146/133;
+  }
 `;
 
 export const Frame = styled.div`

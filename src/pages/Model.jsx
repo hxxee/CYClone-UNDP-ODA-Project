@@ -70,7 +70,7 @@ const Model = () => {
       </M.Nav>
 
       <M.Title>Model Workflow</M.Title>
-      <M.FLow>
+      <M.Flow1>
         <M.Set>
           <M.FTit>Data Input</M.FTit>
           <M.FDet>
@@ -81,6 +81,7 @@ const Model = () => {
             Context variables
           </M.FDet>
         </M.Set>
+        <img src={`${process.env.PUBLIC_URL}/images/go.svg`} alt="next" />
         <M.Set>
           <M.FTit>Preprocessing</M.FTit>
           <M.FDet>
@@ -91,6 +92,7 @@ const Model = () => {
             Time-lag alignment
           </M.FDet>
         </M.Set>
+        <img src={`${process.env.PUBLIC_URL}/images/go.svg`} alt="next" />
         <M.Set>
           <M.FTit>Model Training</M.FTit>
           <M.FDet>
@@ -99,6 +101,10 @@ const Model = () => {
             models + SHAP
           </M.FDet>
         </M.Set>
+      </M.Flow1>
+
+      <M.Flow2>
+        <img src={`${process.env.PUBLIC_URL}/images/go.svg`} alt="next" />
         <M.Set>
           <M.FTit>Scenario Prediction</M.FTit>
           <M.FDet>
@@ -107,6 +113,7 @@ const Model = () => {
             -> Future indicator forecasts
           </M.FDet>
         </M.Set>
+        <img src={`${process.env.PUBLIC_URL}/images/go.svg`} alt="next" />
         <M.Set>
           <M.FTit>Result Analysis</M.FTit>
           <M.FDet>
@@ -114,7 +121,7 @@ const Model = () => {
             policy insights
           </M.FDet>
         </M.Set>
-      </M.FLow>
+      </M.Flow2>
 
       <M.Over>Model Overview</M.Over>
       <M.Goal>Goal</M.Goal>
@@ -230,44 +237,47 @@ const Model = () => {
         </div>
         <ul id="detail">
           <li>
-            <strong>Set change rates for each ODA sector:</strong> Example:
-            Increase <strong>Health ODA </strong>
+            <strong>Set change rates for each ODA sector</strong>
+          </li>
+          <div id="ex1" style={{ marginBottom: "20px" }}>
+            : ex) Increase <strong>Health ODA </strong>
             by <strong>+10%</strong>, and <strong>Social/Env ODA</strong> by{" "}
             <strong>+5%.</strong>
-          </li>
+          </div>
           <li>
-            <strong>Set change rate for RQ:</strong> Adjust the rate of change
-            for <strong>institutional quality</strong> (RQ) to reflect
-            improvements in
-            <br />
-            governance.
+            <strong>Set change rate for RQ</strong>
           </li>
+          <div id="ex1">
+            : Adjust the rate of change for{" "}
+            <strong>institutional quality</strong> (RQ) to reflect improvements
+            in governance.
+          </div>
         </ul>
       </M.B1>
 
       <M.T1>(2) Scenario Results and Reflections</M.T1>
       <M.B2>
-        <ul>
+        <ul id="detail">
           <li>
-            <strong>Immediate Effects (Horizon 0)</strong>: The{" "}
-            <strong>immediate effects</strong> of each set ODA change rate are
-            displayed in graphs
-            <br />
-            and numbers. For example, a{" "}
+            <strong>Immediate Effects (Horizon 0)</strong>
+          </li>
+          <div style={{ marginBottom: "30px" }}>
+            : The <strong>immediate effects</strong> of each set ODA change rate
+            are displayed in graphs and numbers. For example, a{" "}
             <strong>10% increase in Social/Env ODA</strong> will immediately
-            increase life expectancy by
-            <br />
-            <strong>+0.05 years.</strong>
-          </li>
+            increase life expectancy by <strong>+0.05 years.</strong>
+          </div>
           <li>
-            <strong>Lag Effects (Horizon 1 & 2)</strong>: For{" "}
-            <strong>Health ODA</strong>, the <strong>cumulative effects</strong>
-            of <strong>1 year</strong> and <strong>2 years</strong> are shown
-            visually,
-            <br />
-            helping to understand the <strong>long-term impact</strong> of
-            policies.
+            <strong>Lag Effects (Horizon 1 & 2)</strong>
           </li>
+          <div>
+            : For <strong>Health ODA</strong>, the{" "}
+            <strong>cumulative effects</strong>
+            of <strong>1 year</strong> and <strong>2 years</strong> are shown
+            visually, helping to understand the
+            <br />
+            <strong>long-term impact</strong> of policies.
+          </div>
         </ul>
       </M.B2>
 

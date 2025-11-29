@@ -130,49 +130,70 @@ export const Title = styled.div`
   z-index: 1;
 `;
 
-export const FLow = styled.div`
+export const Flow1 = styled.div`
   display: flex;
   flex-direction: row;
-  gap: 20px;
-  margin-top: 130px;
+  gap: 32px;
+  margin-top: 80px;
   z-index: 1;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+
+  img {
+    width: 45px;
+    height: 26.848px;
+  }
+`;
+
+export const Flow2 = styled.div`
+  display: flex;
+  flex-direction: row;
+  gap: 32px;
+  margin-top: 50px;
+  z-index: 1;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+
+  img {
+    width: 45px;
+    height: 26.848px;
+  }
 `;
 
 export const Set = styled.div`
   display: flex;
   flex-direction: column;
-  gap: 20px;
+  gap: -11px;
   align-items: center;
   justify-content: center;
   z-index: 1;
 `;
 
 export const FTit = styled.div`
-  display: inline-flex;
-  height: 45px;
-  padding: 10px;
-  justify-content: center;
-  align-items: center;
-  gap: 10px;
-  border-radius: 30px;
-  background: #8cc2ff;
+  width: 290px;
+  height: 66px;
+  border-radius: 10px;
+  background: #b8d9ff;
   color: #000;
   font-family: Pretendard;
   font-size: 25px;
   font-style: normal;
   font-weight: 500;
   line-height: normal;
-  z-index: 1;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 2;
 `;
 
 export const FDet = styled.div`
-  display: inline-flex;
-  height: 115px;
-  padding: 33px 43px;
-  justify-content: center;
-  align-items: center;
-  gap: 10px;
-  border-radius: 20px;
+  margin-top: -11px;
+  width: 290px;
+  height: 142px;
+  border-radius: 10px;
   background: #2b2d32;
   color: #fff;
   text-align: center;
@@ -181,6 +202,9 @@ export const FDet = styled.div`
   font-style: normal;
   font-weight: 500;
   line-height: 30px; /* 150% */
+  display: flex;
+  align-items: center;
+  justify-content: center;
   z-index: 1;
 `;
 
@@ -200,7 +224,7 @@ export const Goal = styled.div`
   color: #8cc2ff;
   text-align: center;
   font-family: Pretendard;
-  font-size: 25px;
+  font-size: 30px;
   font-style: normal;
   font-weight: 700;
   line-height: 35px; /* 140% */
@@ -225,7 +249,7 @@ export const User = styled.div`
   color: #8cc2ff;
   text-align: center;
   font-family: Pretendard;
-  font-size: 25px;
+  font-size: 30px;
   font-style: normal;
   font-weight: 700;
   line-height: 35px; /* 140% */
@@ -262,7 +286,7 @@ export const Tail = styled.div`
   color: #8cc2ff;
   text-align: center;
   font-family: Pretendard;
-  font-size: 25px;
+  font-size: 30px;
   font-style: normal;
   font-weight: 700;
   line-height: 35px; /* 140% */
@@ -273,7 +297,7 @@ export const Key = styled.div`
   display: flex;
   width: 1150px;
   height: 280px;
-  padding: 36px 20px;
+  padding: 36px 0 36px 20px;
   align-items: center;
   justify-content: center;
   border-radius: 25px;
@@ -294,13 +318,13 @@ export const Key = styled.div`
   }
 
   #detail {
-    margin-left: 16px;
+    // margin-left: 16px;
     color: #fff;
     font-family: Pretendard;
     font-size: 20px;
     font-style: normal;
     font-weight: 500;
-    line-height: 40px;
+    line-height: 45px;
     letter-spacing: 0.4px;
   }
 `;
@@ -309,8 +333,8 @@ export const Model = styled.div`
   margin-top: 50px;
   display: flex;
   width: 1150px;
-  height: 360px;
-  padding: 36px;
+  height: 390px;
+  padding: 36px 20px;
   justify-content: center;
   flex-direction: column;
   align-items: center;
@@ -330,7 +354,7 @@ export const Model = styled.div`
   }
 
   #detail {
-    margin-left: 16px;
+    // margin-left: 16px;
     color: #fff;
     font-family: Pretendard;
     font-size: 20px;
@@ -338,6 +362,9 @@ export const Model = styled.div`
     font-weight: 500;
     line-height: 40px;
     letter-spacing: 0.4px;
+    gap: 25px;
+    display: flex;
+    flex-direction: column;
   }
 `;
 
@@ -345,28 +372,32 @@ export const TBox = styled.div`
   margin-top: 50px;
   display: flex;
   width: 1150px;
-  height: 310px;
-  padding: 36px 20px;
+  height: 325px;
+  padding: 0x 20px;
   align-items: center;
   border-radius: 25px;
   background: rgba(255, 255, 255, 0.1);
   flex-direction: column;
   z-index: 1;
+  justify-content: center;
 
   #detail {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
     margin-left: 16px;
     color: #fff;
     font-family: Pretendard;
     font-size: 20px;
     font-style: normal;
     font-weight: 500;
-    line-height: 40px;
+    line-height: 35px;
     letter-spacing: 0.4px;
   }
 `;
 
 export const Dash = styled.div`
-  margin-top: 250px;
+  margin-top: 220px;
   color: #fff;
   font-family: Pretendard;
   font-size: 60px;
@@ -374,16 +405,16 @@ export const Dash = styled.div`
   font-weight: 700;
   line-height: normal;
   letter-spacing: 3px;
-  margin-bottom: 20px;
+  margin-bottom: 30px;
   z-index: 1;
 `;
 
 export const T1 = styled.div`
-  margin-top: 80px;
+  margin-top: 70px;
   color: #8cc2ff;
   text-align: center;
   font-family: Pretendard;
-  font-size: 25px;
+  font-size: 30px;
   font-style: normal;
   font-weight: 500;
   line-height: 35px; /* 140% */
@@ -393,13 +424,13 @@ export const T1 = styled.div`
 export const B1 = styled.div`
   border-radius: 25px;
   background: rgba(255, 255, 255, 0.1);
-  margin-top: 60px;
+  margin-top: 30px;
   display: flex;
   width: 1150px;
-  height: 245px;
-  padding: 39px 18px 38px 18px;
+  height: 285px;
+  padding-left: 36px;
   justify-content: center;
-  align-items: center;
+  align-items: start;
   flex-direction: column;
   z-index: 1;
 
@@ -414,6 +445,7 @@ export const B1 = styled.div`
   }
 
   #detail {
+    margin-left: 27px;
     color: #fff;
     font-family: Pretendard;
     font-size: 20px;
@@ -421,49 +453,35 @@ export const B1 = styled.div`
     font-weight: 500;
     line-height: 40px;
     letter-spacing: 0.4px;
-    margin-top: 24px;
-    margin-left: 16px;
+    margin-top: 21px;
+  }
+
+  #ex1 {
+    color: #fff;
+    font-family: Pretendard;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 35px; /* 175% */
+    letter-spacing: 0.4px;
   }
 `;
 
 export const B2 = styled.div`
   width: 1150px;
   display: flex;
-  flex-direction: row;
-  height: 290px;
-  padding: 45px 0;
-  align-items: center;
-  border-radius: 25px;
-  background: rgba(255, 255, 255, 0.1);
-  margin-top: 60px;
-  justify-content: center;
-  z-index: 1;
-
-  ul {
-    margin-left: 16px;
-    color: #fff;
-    font-family: Pretendard;
-    font-size: 20px;
-    font-style: normal;
-    font-weight: 500;
-    line-height: 40px;
-    letter-spacing: 0.4px;
-  }
-`;
-
-export const B3 = styled.div`
-  display: flex;
-  width: 1150px;
-  height: 220px;
-  padding: 49px 31px 48px 16px;
-  align-items: center;
-  border-radius: 25px;
-  background: rgba(255, 255, 255, 0.1);
   flex-direction: column;
-  margin-top: 60px;
+  justify-content: center;
+  height: 340px;
+  padding-left: 20px;
+  align-items: start;
+  border-radius: 25px;
+  background: rgba(255, 255, 255, 0.1);
+  margin-top: 30px;
   z-index: 1;
 
-  ul {
+  #detail {
+    margin-left: 28px;
     color: #fff;
     font-family: Pretendard;
     font-size: 20px;
@@ -474,15 +492,54 @@ export const B3 = styled.div`
   }
 
   div {
-    margin-right: auto;
-    margin-left: 27px;
     color: #fff;
     font-family: Pretendard;
     font-size: 20px;
     font-style: normal;
     font-weight: 500;
-    line-height: 40px; /* 200% */
+    line-height: 35px; /* 175% */
     letter-spacing: 0.4px;
+  }
+`;
+
+export const B3 = styled.div`
+  display: flex;
+  width: 1150px;
+  height: 225px;
+  padding-left: 20px;
+  border-radius: 25px;
+  background: rgba(255, 255, 255, 0.1);
+  flex-direction: column;
+  margin-top: 30px;
+  z-index: 1;
+  justify-content: center;
+  align-items: start;
+
+  ul {
+    margin-left: 28px;
+    text-align: left;
+    color: #fff;
+    font-family: Pretendard;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 40px;
+    letter-spacing: 0.4px;
+  }
+
+  div {
+    margin-top: 30px;
+    width: 100%;
+    text-align: center;
+    margin-right: auto;
+    margin-left: -20px;
+    color: #fff;
+    font-family: Inter;
+    font-size: 22px;
+    font-style: italic;
+    font-weight: 500;
+    line-height: 40px; /* 200% */
+    letter-spacing: 0.44px;
   }
 `;
 
@@ -495,8 +552,8 @@ export const Example = styled.div`
   z-index: 1;
   line-height: normal;
   letter-spacing: 3px;
-  margin-top: 250px;
-  margin-bottom: 20px;
+  margin-top: 200px;
+  margin-bottom: 30px;
 `;
 
 export const B4 = styled.div`
@@ -508,8 +565,9 @@ export const B4 = styled.div`
   z-index: 1;
   border-radius: 25px;
   background: rgba(255, 255, 255, 0.1);
-  margin-top: 60px;
+  margin-top: 30px;
   flex-direction: column;
+  margin-bottom: 5px;
 
   ul {
     color: #fff;
@@ -523,7 +581,7 @@ export const B4 = styled.div`
 `;
 
 export const B5 = styled.div`
-  margin-top: 60px;
+  margin-top: 30px;
   display: flex;
   width: 1150px;
   height: 292px;
@@ -549,7 +607,7 @@ export const B5 = styled.div`
 `;
 
 export const B6 = styled.div`
-  margin-top: 60px;
+  margin-top: 30px;
   display: flex;
   width: 1150px;
   z-index: 1;
@@ -573,8 +631,8 @@ export const B6 = styled.div`
 `;
 
 export const Limit = styled.div`
-  margin-top: 250px;
-  margin-bottom: 20px;
+  margin-top: 200px;
+  margin-bottom: 30px;
   color: #fff;
   font-family: Pretendard;
   font-size: 60px;
@@ -595,7 +653,8 @@ export const B7 = styled.div`
   background: rgba(255, 255, 255, 0.1);
   z-index: 1;
   flex-direction: column;
-  margin-top: 60px;
+  margin-top: 30px;
+  margin-bottom: 5px;
 
   ul {
     color: #fff;
@@ -611,7 +670,8 @@ export const B7 = styled.div`
 `;
 
 export const B8 = styled.div`
-  margin-top: 60px;
+  margin-top: 30px;
+  margin-bottom: 5px;
   flex-direction: column;
   display: flex;
   width: 1150px;
@@ -637,7 +697,7 @@ export const B8 = styled.div`
 `;
 
 export const B9 = styled.div`
-  margin-top: 60px;
+  margin-top: 30px;
   flex-direction: column;
   display: flex;
   width: 1150px;
