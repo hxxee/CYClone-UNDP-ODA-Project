@@ -98,6 +98,7 @@ const Main = () => {
             />
           </M.Img>
           <M.Frame>
+            <M.BackgroundImage src="/images/frame.png" alt="background" />
             <M.CTit>Life Simulation</M.CTit>
             <M.CDet>
               Scenario-based prediction of life
@@ -117,6 +118,7 @@ const Main = () => {
             />
           </M.Img>
           <M.Frame>
+            <M.BackgroundImage src="/images/frame.png" alt="background" />
             <M.CTit>Impact Comparison</M.CTit>
             <M.CDet>
               Assessment of short-, medium-,
@@ -136,6 +138,7 @@ const Main = () => {
             />
           </M.Img>
           <M.Frame>
+            <M.BackgroundImage src="/images/frame.png" alt="background" />
             <M.CTit>Optimal Allocation</M.CTit>
             <M.CDet>
               Identification of the best ODA

@@ -201,6 +201,12 @@ export const PBtn = styled.div`
   font-weight: 500;
   line-height: normal;
   z-index: 2;
+
+  &:hover {
+    box-shadow: 0 0 15px 6px rgba(255, 255, 255, 0.6);
+    transform: scale(1.05);
+    backdrop-filter: blur(4px);
+  }
 `;
 
 export const MBtn = styled.div`
@@ -220,6 +226,14 @@ export const MBtn = styled.div`
   font-weight: 500;
   line-height: normal;
   z-index: 2;
+  transition: all 0.3s ease;
+  position: relative;
+
+  &:hover {
+    box-shadow: 0 0 20px 8px rgba(0, 72, 153, 0.6);
+    transform: scale(1.05);
+    backdrop-filter: blur(4px);
+  }
 `;
 
 export const Outcomes = styled.div`
@@ -251,7 +265,7 @@ export const OutDet = styled.div`
 `;
 
 export const Dev = styled.div`
-  margin-top: 184px;
+  margin-top: 204px;
   gap: 30px;
   display: flex;
   flex-direction: row;
@@ -302,14 +316,25 @@ export const Frame = styled.div`
   display: flex;
   flex-direction: column;
   text-align: center;
-  align-itesm: center;
+  align-items: center;
   gap: 60px;
-
-  background-image: url("/images/frame.png");
-  background-size: cover; /* 또는 contain / 100% 100% */
-  background-position: center;
-  background-repeat: no-repeat;
+  position: relative;
+  overflow: hidden;
   z-index: 2;
+`;
+
+export const BackgroundImage = styled.img`
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -1;
+
+  opacity: 0.22; /* fill 비슷한 효과 */
+  filter: drop-shadow(1px 1px 1px rgba(196, 196, 196, 0.8))
+    drop-shadow(-1px -1px 1px rgba(196, 196, 196, 0.8));
 `;
 
 export const CTit = styled.div`

@@ -296,13 +296,13 @@ export const Tail = styled.div`
 export const Key = styled.div`
   display: flex;
   width: 1150px;
-  height: 280px;
+  height: 300px;
   padding: 36px 0 36px 20px;
   align-items: center;
   justify-content: center;
   border-radius: 25px;
   background: rgba(255, 255, 255, 0.1);
-  margin-top: 60px;
+  margin-top: 50px;
   flex-direction: column;
   z-index: 1;
 
@@ -310,7 +310,7 @@ export const Key = styled.div`
     color: #fff;
     text-align: center;
     font-family: Pretendard;
-    font-size: 20px;
+    font-size: 28px;
     font-style: normal;
     font-weight: 700;
     line-height: normal;
@@ -330,10 +330,10 @@ export const Key = styled.div`
 `;
 
 export const Model = styled.div`
-  margin-top: 50px;
+  margin-top: 40px;
   display: flex;
   width: 1150px;
-  height: 390px;
+  height: 410px;
   padding: 36px 20px;
   justify-content: center;
   flex-direction: column;
@@ -346,7 +346,7 @@ export const Model = styled.div`
     color: #fff;
     text-align: center;
     font-family: Pretendard;
-    font-size: 20px;
+    font-size: 28px;
     font-style: normal;
     font-weight: 700;
     line-height: normal;

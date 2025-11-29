@@ -185,7 +185,12 @@ const Project = () => {
         </div>
       </P.Con>
 
-      <P.Github style={{ cursor: "pointer" }}>
+      <P.Github
+        style={{ cursor: "pointer" }}
+        onClick={() =>
+          window.open("https://github.com/CYClone-22/undp-odaproj/tree/main")
+        }
+      >
         <img src={`${process.env.PUBLIC_URL}/images/github.png`} alt="github" />
         <P.GDet>
           <div id="text">More information on</div>

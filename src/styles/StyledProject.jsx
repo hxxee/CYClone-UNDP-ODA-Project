@@ -510,6 +510,12 @@ export const Github = styled.div`
     width: 40px;
     height: 40px;
   }
+
+  &:hover {
+    box-shadow: 0 0 20px 10px rgba(0, 72, 153, 0.5);
+    backdrop-filter: blur(4px); /* 약간의 블러 효과 */
+    transform: scale(1.03); /* 약간 커지는 효과 */
+  }
 `;
 
 export const GDet = styled.div`
