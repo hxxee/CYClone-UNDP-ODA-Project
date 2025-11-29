@@ -9,8 +9,8 @@ import ScrollToTop from "./pages/ScrollToTop";
 function App() {
   return (
     <BrowserRouter>
-      <GlobalStyle />
       <ScrollToTop />
+      <GlobalStyle />
       <Routes>
         <Route path="/" element={<Main />} />
         <Route path="/project" element={<Project />} />

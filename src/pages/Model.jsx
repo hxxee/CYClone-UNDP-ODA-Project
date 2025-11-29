@@ -5,7 +5,10 @@ import { useNavigate } from "react-router-dom";
 const Model = () => {
   const navigate = useNavigate();
 
-  const goProject = () => navigate(`/project`);
+  const goProject = () => {
+    navigate(`/project`);
+    window.scrollTo(0, 0);
+  };
   const goHome = () => navigate(`/`);
   const goAbout = () => navigate(`/about`);
   const goModel = () => navigate(`/model`);

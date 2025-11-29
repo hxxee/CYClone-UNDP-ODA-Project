@@ -46,7 +46,6 @@ const GlobalStyle = createGlobalStyle`
     
   html, body {
   width: 100%;
-  height: 100%;
   margin: 0;
   padding: 0;
   overflow-x: hidden;
@@ -57,7 +56,6 @@ const GlobalStyle = createGlobalStyle`
   #root {
   width: 100%;
   margin: 0 auto;
-  height: 100%;
   display: flex;
   flex-direction: column;
   }
