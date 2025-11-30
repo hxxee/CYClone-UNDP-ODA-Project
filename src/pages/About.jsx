@@ -19,9 +19,9 @@ const About = () => {
       name: "Choi Wonkyo",
       desc: {
         intro: "Team Leader & Visualization Lead",
-        body: "Department of Data Science, Dongduk Women's University (Expected Graduation: Feb 2027)",
+        body: "Department of Data Science,\nDongduk Women's University (Expected Graduation: Feb 2027)",
         footer:
-          "I am a data science student at Dongduk Women's University and the team leader for this project. I led the project planning and coordination, designed interactive dashboards, and visualized the effects of Official Development Assistance (ODA) on life expectancy in Ethiopia. My role involved translating complex econometric and machine-learning results into clear, actionable insights for policy simulation and presentation.",
+          "I am a data science student at Dongduk Women's University and the team leader for this project.\nI led the project planning and coordination, designed interactive dashboards, and visualized the effects of Official Development Assistance (ODA) on life expectancy in Ethiopia.\nMy role involved translating complex econometric and machine-learning results into clear, actionable insights for policy simulation and presentation.",
       },
     },
     {
@@ -29,9 +29,9 @@ const About = () => {
       name: "Choi Eunjun",
       desc: {
         intro: "Data Analysis & Modeling Researcher",
-        body: "Department of Data Science, Dongduk Women's University (Senior Year)",
+        body: "Department of Data Science,\nDongduk Women's University (Senior Year)",
         footer:
-          "I am a senior student majoring in Data Science at Dongduk Women’s University. In this project, I was responsible for analyzing data and conducting simulations using econometric and machine-learning models to study the relationship between Official Development Assistance (ODA) and life expectancy. Based on this research, I quantitatively evaluated how development aid contributes to improvements in life expectancy.",
+          "I am a senior student majoring in Data Science at Dongduk Women’s University. In this project, I was responsible for analyzing data and conducting simulations using econometric and machine-learning models to study the relationship between Official Development Assistance (ODA) and life expectancy.\nBased on this research, I quantitatively evaluated how development aid contributes to improvements in life expectancy.",
       },
     },
     {
@@ -39,9 +39,9 @@ const About = () => {
       name: "Yang Hyewon",
       desc: {
         intro: "Data Analysis & Modeling Researcher",
-        body: "Department of Data Science & Department of Computer Science, Dongduk Women’s University (Senior Year)",
+        body: "Department of Data Science & Department of Computer Science,\nDongduk Women’s University (Senior Year)",
         footer:
-          "I am a senior student double majoring in Data Science and Computer Science at Dongduk Women’s University. In this project, I was responsible for analyzing the relationship between Official Development Assistance (ODA) and development outcomes through time-lagged correlation and predictive modeling.",
+          "I am a senior student double majoring in Data Science and Computer Science at Dongduk Women’s University.\nIn this project, I was responsible for analyzing the relationship between Official Development Assistance (ODA) and development outcomes through time-lagged correlation and predictive modeling.",
       },
     },
   ];
@@ -208,7 +208,10 @@ const About = () => {
             </A.Prof>
 
             {/* 상세정보 텍스트 */}
-            <A.DetailText active={activeIndex === i}>
+            <A.DetailText
+              active={activeIndex === i}
+              style={{ whiteSpace: "pre-line" }}
+            >
               <p id="intro">{p.desc.intro}</p>
               <p id="body">{p.desc.body}</p>
               <p id="footer">{p.desc.footer}</p>

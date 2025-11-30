@@ -252,7 +252,7 @@ export const Profile = styled.div`
   gap: 60px;
   align-items: center;
   justify-content: center;
-  margin-top: 80px;
+  margin-top: 100px;
 `;
 
 export const Card = styled.div`
@@ -362,7 +362,7 @@ export const DetailText = styled.div`
   #intro {
     color: #fff;
     font-family: Pretendard;
-    font-size: 25px;
+    font-size: 24px;
     font-style: normal;
     font-weight: 500;
     line-height: normal;
@@ -373,7 +373,7 @@ export const DetailText = styled.div`
   #body {
     color: #fff;
     font-family: Pretendard;
-    font-size: 19px;
+    font-size: 18px;
     font-style: normal;
     font-weight: 500;
     line-height: 28.6px; /* 130% */
@@ -385,7 +385,7 @@ export const DetailText = styled.div`
   #footer {
     color: #fff;
     font-family: Pretendard;
-    font-size: 19px;
+    font-size: 18px;
     font-style: normal;
     font-weight: 500;
     line-height: 28px; /* 127.273% */
