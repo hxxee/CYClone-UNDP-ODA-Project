@@ -27,7 +27,7 @@ const Main = () => {
           </M.CYC>
           <M.UNDP>
             <img
-              src={`${process.env.PUBLIC_URL}/images/logo_u.svg`}
+              src={`${process.env.PUBLIC_URL}/images/logo_u.jpeg`}
               alt="logo"
             />
             <div>UNDP</div>
