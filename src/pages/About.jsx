@@ -54,14 +54,14 @@ const About = () => {
         <A.Logo>
           <A.CYC>
             <img
-              src={`${process.env.PUBLIC_URL}/images/logo_c.svg`}
+              src={`${process.env.PUBLIC_URL}/images/logo_c.png`}
               alt="logo"
             />
             <div>CYClone</div>
           </A.CYC>
           <A.UNDP>
             <img
-              src={`${process.env.PUBLIC_URL}/images/logo_u.svg`}
+              src={`${process.env.PUBLIC_URL}/images/logo_u.jpeg`}
               alt="logo"
             />
             <div>UNDP</div>
