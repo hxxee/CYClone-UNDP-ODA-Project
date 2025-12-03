@@ -420,7 +420,7 @@ const Model = () => {
 
       <M.Button
         style={{ cursor: "pointer" }}
-        onClick={() => window.open("https://d08b79a39d1d.ngrok-free.app")}
+        onClick={() => window.open("https://ec0a14b492be.ngrok-free.app")}
       >
         Run Simulation
       </M.Button>
