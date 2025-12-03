@@ -20,7 +20,7 @@ const Main = () => {
         <M.Logo>
           <M.CYC>
             <img
-              src={`${process.env.PUBLIC_URL}/images/logo_c.svg`}
+              src={`${process.env.PUBLIC_URL}/images/logo_c.png`}
               alt="logo"
             />
             <div>CYClone</div>
