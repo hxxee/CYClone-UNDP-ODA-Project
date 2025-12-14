@@ -185,7 +185,7 @@ const Project = () => {
       
       <P.Conclusion>Conclusion</P.Conclusion>
       <P.Con>
-        <div style={{ fontSize: "1.1rem", fontWeight: 700 }}>
+        <div style={{ fontSize: "1.1rem", fontWeight: 1000 }}>
           LifeSim: An Evidence-Based Framework for ODA Optimization
         </div>
         <div>
@@ -201,10 +201,9 @@ const Project = () => {
           <br />
           ensuring high confidence in its policy recommendations.
         </div>
-
         <br>
         </br>
-        <div style={{ fontSize: "1.1rem", fontWeight: 700 }}>
+        <div style={{ fontSize: "1.1rem", fontWeight: 1000 }}>
           Key Findings and Lag Structure
         </div>
         <div>
@@ -212,6 +211,44 @@ const Project = () => {
           <br />
           Social/Environmental ODA, and Governance ODA and their impact on changes in life expectancy. 
         </div>
+        <div>
+          The most critical insight lies in the distinct time lags required for the effects of ODA across different sectors to materialize.
+        </div>
+        <div>
+          Health ODA demonstrates an overwhelmingly strong positive effect (Coefficient: approximately +1.08) but only after a two-year lag (Lag 2). 
+        </div>
+        <div>
+        This impact is highly statistically significant. 
+          <br />
+        This suggests that ODA investment requires a medium-term horizon for medical infrastructure build-out
+          <br />
+          and health service expansion to fully translate into improved life expectancy.
+        </div>
+        <div>
+          Social/Environmental ODA shows a significant positive impact (Coefficient: approximately +0.52) immediately upon input (Lag 0). 
+        </div>
+        <div>
+          This effect is also highly statistically significant, reflecting the quick, 
+          <br />
+          visible gains in quality of life through improved hygiene and environmental conditions.
+        </div>
+        <div>
+          In contrast, Governance ODA exhibits a short-term negative effect (Coefficient: approximately -0.41) one year later (Lag 1). 
+        </div>
+        <div>
+          This effect is statistically significant and can be interpreted as a temporary loss of efficiency 
+          <br />
+          due to the reorganization costs or restructuring of administrative bodies.
+        </div>
+        <div>
+          Finally, institutional quality, specifically Regulatory Quality (RQ), acts as the institutional foundation
+          <br />
+          that amplifies the magnitude and sustainability of ODA effectiveness.
+        </div>
+        <div>
+          This evidence-based framework supports policymakers in planning and optimizing ODA strategies for sustainable development outcomes.
+        </div>
+        
           
       </P.Con>
 
