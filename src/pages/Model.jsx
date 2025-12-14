@@ -248,11 +248,11 @@ const Model = () => {
             <strong>+5%.</strong>
           </div>
           <li>
-            <strong>Set change rate for Regulatory Quality</strong>
+            <strong>Set change rate for RQ</strong>
           </li>
           <div id="ex1">
             : Adjust the rate of change for{" "}
-            <strong>institutional quality</strong> (RQ) to reflect improvements
+            <strong>institutional quality</strong> (Regulatory Quality) to reflect improvements
             in governance.
           </div>
         </ul>
