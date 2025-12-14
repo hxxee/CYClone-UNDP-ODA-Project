@@ -168,7 +168,7 @@ const Model = () => {
           </li>
           <li>
             <strong>RQ</strong> (Regulatory Quality): Institutional quality
-            indicator (using WGI)
+            indicator (using World Governance Indicators)
           </li>
         </ul>
       </M.Key>
@@ -248,7 +248,7 @@ const Model = () => {
             <strong>+5%.</strong>
           </div>
           <li>
-            <strong>Set change rate for RQ</strong>
+            <strong>Set change rate for Regulatory Quality</strong>
           </li>
           <div id="ex1">
             : Adjust the rate of change for{" "}
