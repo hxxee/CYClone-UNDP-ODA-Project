@@ -105,7 +105,7 @@ const Main = () => {
               <br />
               expectancy under different ODA
               <br />
-              interventions.
+              interventions
             </M.CDet>
           </M.Frame>
         </M.Component>
@@ -125,7 +125,7 @@ const Main = () => {
               <br />
               and long-term effects of sectoral
               <br />
-              ODA investments (lag analysis).
+              ODA investments (lag analysis)
             </M.CDet>
           </M.Frame>
         </M.Component>
@@ -147,7 +147,7 @@ const Main = () => {
               <br />
               analysis for maximizing
               <br />
-              development outcomes.
+              development outcomes
             </M.CDet>
           </M.Frame>
         </M.Component>
