@@ -185,7 +185,7 @@ const Project = () => {
       
       <P.Conclusion>Conclusion</P.Conclusion>
       <P.Con>
-        <div style={{ fontSize: "1.1rem", fontWeight: 600 }}>
+        <div style={{ fontSize: "1.1rem", fontWeight: 700 }}>
           LifeSim: An Evidence-Based Framework for ODA Optimization
         </div>
         <div>
@@ -204,7 +204,7 @@ const Project = () => {
 
         <br>
         </br>
-        <div style={{ fontSize: "1.1rem", fontWeight: 600 }}>
+        <div style={{ fontSize: "1.1rem", fontWeight: 700 }}>
           Key Findings and Lag Structure
         </div>
         <div>
