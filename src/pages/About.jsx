@@ -61,7 +61,7 @@ const About = () => {
           </A.CYC>
           <A.UNDP>
             <img
-              src={`${process.env.PUBLIC_URL}/images/logo_u.jpeg`}
+              src={`${process.env.PUBLIC_URL}/images/logo_u.png`}
               alt="logo"
             />
             <div>UNDP</div>
