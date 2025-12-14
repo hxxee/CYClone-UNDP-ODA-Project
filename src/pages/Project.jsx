@@ -116,6 +116,14 @@ const Project = () => {
               It serves as a practical case for policymakers and international
               development organizations to apply insights from simulations.
             </div>
+            
+            <br />
+
+            <div style={{ fontSize: "0.85rem", opacity: 0.7 }}>
+              Data Sources: CRS ODA Data (UNDP – Seoul Policy Centre);
+              World Bank Open Data – World Development Indicators
+            </div>
+            
           </P.BDet>
         </P.Box>
         <P.Box>
@@ -172,92 +180,33 @@ const Project = () => {
         </P.Box>
       </P.List>
 
+
+
+      
       <P.Conclusion>Conclusion</P.Conclusion>
       <P.Con>
         <div>
-          LifeSim: An Evidence-Based Framework for ODA Optimization
+          LifeSim demonstrates how ODA interventions influence life expectancy
+          in Ethiopia across multiple sectors.
         </div>
-
-        <br />
-
         <div>
-          LifeSim demonstrates how ODA interventions influence life expectancy in
-          Ethiopia across multiple sectors. Our predictive system utilizes a Dynamic
-          Linear Model (DLM) optimized with OLS-HAC (R²=0.851), providing a robust,
-          statistically sound framework to analyze the dynamic, lagged relationship
-          between ODA and life expectancy.
+          Key findings show Health ODA has a strong effect after 2 years,
+          Social/Environmental ODA acts immediately,
+          <br />
+          and Governance ODA may have short-term negative impacts mitigated by
+          institutional quality.
         </div>
-
-        <br />
-
-        <div>
-          The model effectively explains approximately 76% of the variability in life
-          expectancy changes, ensuring high confidence in its policy recommendations.
-        </div>
-
-        <br />
-
-        <div>
-          Key Findings and Lag Structure
-        </div>
-
-        <br />
-
-        <div>
-          Our predictive model clearly captures the dynamic relationship between
-          Health ODA, Social/Environmental ODA, and Governance ODA and their impact on
-          changes in life expectancy. The most critical insight lies in the distinct
-          time lags required for the effects of ODA across different sectors to
-          materialize.
-        </div>
-
-        <br />
-
-        <div>
-          Health ODA demonstrates an overwhelmingly strong positive effect
-          (Coefficient: approximately +1.08) but only after a two-year lag (Lag 2).
-          This impact is highly statistically significant. This suggests that ODA
-          investment requires a medium-term horizon for medical infrastructure
-          build-out and health service expansion to fully translate into improved life
-          expectancy.
-        </div>
-
-        <br />
-
-        <div>
-          Social/Environmental ODA shows a significant positive impact (Coefficient:
-          approximately +0.52) immediately upon input (Lag 0). This effect is also
-          highly statistically significant, reflecting the quick, visible gains in
-          quality of life through improved hygiene and environmental conditions.
-        </div>
-
-        <br />
-
-        <div>
-          In contrast, Governance ODA exhibits a short-term negative effect
-          (Coefficient: approximately -0.41) one year later (Lag 1). This effect is
-          statistically significant and can be interpreted as a temporary loss of
-          efficiency due to the reorganization costs or restructuring of
-          administrative bodies.
-        </div>
-
-        <br />
-
-        <div>
-          Finally, institutional quality, specifically Regulatory Quality (RQ), acts
-          as the institutional foundation that amplifies the magnitude and
-          sustainability of ODA effectiveness.
-        </div>
-
-        <br />
-
         <div>
           This evidence-based framework supports policymakers in planning and
-          optimizing ODA strategies for sustainable development outcomes.
+          optimizing ODA strategies
+          <br />
+          for sustainable development outcomes.
         </div>
-
       </P.Con>
 
+
+
+      
       <P.Github
         style={{ cursor: "pointer" }}
         onClick={() =>
