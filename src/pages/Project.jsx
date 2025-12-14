@@ -197,8 +197,22 @@ const Project = () => {
           statistically sound framework to analyze the dynamic, lagged relationship between ODA and life expectancy. 
         </div>
         <div>
-          The model effectively explains approximately 76% of the variability in life expectancy changes, 
+          The model effectively explains approximately 76% of the variability in life expectancy changes,
+          <br />
           ensuring high confidence in its policy recommendations.
+        </div>
+
+        <br>
+        </br>
+        <div>
+          Key Findings and Lag Structure
+        </div>
+        <div>
+          Our predictive model clearly captures the dynamic relationship between Health ODA, 
+          <br />
+          Social/Environmental ODA, and Governance ODA 
+          <br />
+          and their impact on changes in life expectancy. 
         </div>
           
       </P.Con>
