@@ -185,7 +185,7 @@ const Project = () => {
       
       <P.Conclusion>Conclusion</P.Conclusion>
       <P.Con>
-        <div>
+        <div style={{ fontSize: "1.1rem", fontWeight: 600 }}>
           LifeSim: An Evidence-Based Framework for ODA Optimization
         </div>
         <div>
@@ -204,15 +204,13 @@ const Project = () => {
 
         <br>
         </br>
-        <div>
+        <div style={{ fontSize: "1.1rem", fontWeight: 600 }}>
           Key Findings and Lag Structure
         </div>
         <div>
           Our predictive model clearly captures the dynamic relationship between Health ODA, 
           <br />
-          Social/Environmental ODA, and Governance ODA 
-          <br />
-          and their impact on changes in life expectancy. 
+          Social/Environmental ODA, and Governance ODA and their impact on changes in life expectancy. 
         </div>
           
       </P.Con>
