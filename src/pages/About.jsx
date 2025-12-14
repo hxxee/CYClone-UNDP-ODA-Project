@@ -102,7 +102,7 @@ const About = () => {
       <A.Title>Introduction</A.Title>
       <A.Det_70>
         Our team participated in the{" "}
-        <Highlight style={{ fontWeight: "700" }}>UNDP 2025 Data Dive</Highlight>{" "}
+        <Highlight style={{ fontWeight: "700" }}>2025 Data Dive for Development Hackathon</Highlight>{" "}
         and was selected as one of the two{" "}
         <Highlight style={{ fontWeight: "700" }}>Winner teams.</Highlight>
       </A.Det_70>
