@@ -215,7 +215,9 @@ const Project = () => {
           The most critical insight lies in the distinct time lags required for the effects of ODA across different sectors to materialize.
         </div>
         <div>
-          Health ODA demonstrates an overwhelmingly strong positive effect (Coefficient: approximately +1.08) but only after a two-year lag (Lag 2). 
+          Health ODA demonstrates an overwhelmingly strong positive effect (Coefficient: approximately +1.08)
+          <br />
+          but only after a two-year lag (Lag 2). 
         </div>
         <div>
         This impact is highly statistically significant. 
@@ -225,7 +227,9 @@ const Project = () => {
           and health service expansion to fully translate into improved life expectancy.
         </div>
         <div>
-          Social/Environmental ODA shows a significant positive impact (Coefficient: approximately +0.52) immediately upon input (Lag 0). 
+          Social/Environmental ODA shows a significant positive impact (Coefficient: approximately +0.52)
+          <br />
+          immediately upon input (Lag 0). 
         </div>
         <div>
           This effect is also highly statistically significant, reflecting the quick, 
@@ -246,7 +250,9 @@ const Project = () => {
           that amplifies the magnitude and sustainability of ODA effectiveness.
         </div>
         <div>
-          This evidence-based framework supports policymakers in planning and optimizing ODA strategies for sustainable development outcomes.
+          This evidence-based framework supports policymakers in planning and optimizing ODA strategies
+          <br />
+          for sustainable development outcomes.
         </div>
         
           
