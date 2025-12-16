@@ -15,7 +15,7 @@ const About = () => {
 
   const profiles = [
     {
-      img: "/images/wonkyo.jpg",
+      img: "new_wonkyo.png",
       name: "Choi Wonkyo",
       desc: {
         intro: "Team Leader & Visualization Lead",
@@ -25,7 +25,7 @@ const About = () => {
       },
     },
     {
-      img: "/images/eunjun.jpg",
+      img: "/images/new_eunjun.jpg",
       name: "Choi Eunjun",
       desc: {
         intro: "Data Analysis & Modeling Researcher",
@@ -35,7 +35,7 @@ const About = () => {
       },
     },
     {
-      img: "/images/hyewon.png",
+      img: "/images/new_hyewon.jpg",
       name: "Yang Hyewon",
       desc: {
         intro: "Data Analysis & Modeling Researcher",
