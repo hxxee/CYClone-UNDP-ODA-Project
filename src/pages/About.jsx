@@ -21,7 +21,7 @@ const About = () => {
         intro: "Team Leader & Visualization Lead",
         body: "Department of Data Science,\nDongduk Women's University (Expected Graduation: Feb 2027)",
         footer:
-          "I am a data science student at Dongduk Women’s University.\nIn this project, I served as the team leader and visualization lead, overseeing overall project planning and coordination.\nI was responsible for designing interactive dashboards and visualizing the effects of Official Development Assistance (ODA) on life expectancy in Ethiopia, translating complex econometric and machine-learning results into clear, policy-relevant insights for simulation and presentation.",
+          "I am a data science student at Dongduk Women’s University.In this project, I served as the team leader and visualization lead, overseeing overall project planning and coordination.I was responsible for designing interactive dashboards and visualizing the effects of Official Development Assistance (ODA) on life expectancy in Ethiopia, translating complex econometric and machine-learning results into clear, policy-relevant insights for simulation and presentation.",
       },
     },
     {
@@ -41,7 +41,7 @@ const About = () => {
         intro: "Data Analysis & Modeling Researcher",
         body: "Department of Data Science & Department of Computer Science,\nDongduk Women’s University (Senior Year)",
         footer:
-          "I am a senior student double majoring in Data Science and Computer Science at Dongduk Women’s University.\nIn this project, I was responsible for analyzing the relationship between Official Development Assistance (ODA) and development outcomes through time-lagged correlation and predictive modeling.",
+          "I am a senior student double majoring in Data Science and Computer Science at Dongduk Women’s University.In this project, I was responsible for analyzing the relationship between Official Development Assistance (ODA) and development outcomes through time-lagged correlation and predictive modeling.",
       },
     },
   ];
