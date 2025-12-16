@@ -15,13 +15,13 @@ const About = () => {
 
   const profiles = [
     {
-      img: "new_wonkyo.png",
+      img: "/images/new_wonkyo.png",
       name: "Choi Wonkyo",
       desc: {
         intro: "Team Leader & Visualization Lead",
         body: "Department of Data Science,\nDongduk Women's University (Expected Graduation: Feb 2027)",
         footer:
-          "I am a data science student at Dongduk Women's University and the team leader for this project.\nI led the project planning and coordination, designed interactive dashboards, and visualized the effects of Official Development Assistance (ODA) on life expectancy in Ethiopia.\nMy role involved translating complex econometric and machine-learning results into clear, actionable insights for policy simulation and presentation.",
+          "I am a data science student at Dongduk Women’s University.\nIn this project, I served as the team leader and visualization lead, overseeing overall project planning and coordination.\nI was responsible for designing interactive dashboards and visualizing the effects of Official Development Assistance (ODA) on life expectancy in Ethiopia, translating complex econometric and machine-learning results into clear, policy-relevant insights for simulation and presentation.",
       },
     },
     {
