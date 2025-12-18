@@ -198,9 +198,7 @@ const Project = () => {
         </br>
         
         <div style={{ fontSize: "1.1rem"}}>
-          <span style={{ fontWeight: 1000 }}>
-          🔍 Model Overview
-          </span>
+          <span style={{ fontWeight: 1000 }}>🔍 Model Overview</span>
           <span style={{ fontWeight: 400 }}>
             Method: Dynamic Linear Model (DLM) with OLS-HAC 
             <br />
