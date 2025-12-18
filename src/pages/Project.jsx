@@ -254,6 +254,9 @@ const Project = () => {
           Regulatory Quality (RQ) strengthens both the magnitude and durability of ODA effects across sectors.
         </div>
 
+        <br>
+        </br>
+        
         <div>
         🎯 Takeaway for Policymakers
           <br />
