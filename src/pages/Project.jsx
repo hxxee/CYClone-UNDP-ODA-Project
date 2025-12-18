@@ -197,19 +197,19 @@ const Project = () => {
         <br>
         </br>
         
-        <div style={{ fontSize: "1.1rem", fontWeight: 1000 }}>
+        <div style={{ fontSize: "1.1rem"}}>
+          <span style={{ fontWeight: 1000 }}>
           🔍 Model Overview
-        </div>
-
-        <div style={{ margin: 0 }}>
-          Method: Dynamic Linear Model (DLM) with OLS-HAC 
-          <br />
-          Performance: R² = 0.851
-          <br />
-          Explanatory Power: ~76% of life expectancy variation explained
-          <br />
-           → High confidence in policy-relevant insights
-        </div>
+          </span>
+          <span style={{ fontWeight: 400 }}>
+            Method: Dynamic Linear Model (DLM) with OLS-HAC 
+            <br />
+            Performance: R² = 0.851
+            <br />
+            Explanatory Power: ~76% of life expectancy variation explained
+            <br />
+             → High confidence in policy-relevant insights
+          </span>
 
         <br>
         </br>
