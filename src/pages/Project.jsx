@@ -199,7 +199,9 @@ const Project = () => {
         
         <div style={{ fontSize: "1.1rem", fontWeight: 1000 }}>
           🔍 Model Overview
-          <br />
+        </div>
+
+        <div style={{ margin: 0 }}>
           Method: Dynamic Linear Model (DLM) with OLS-HAC 
           <br />
           Performance: R² = 0.851
