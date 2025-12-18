@@ -226,7 +226,7 @@ const Project = () => {
           Interpretation: Benefits emerge after infrastructure and service expansion
         </div>
         
-        <div>
+        <div style={{fontSize: "1.1rem"}}>
           🌱 Social & Environmental ODA
           <br />
           Effect: Positive impact (+0.52)
@@ -236,7 +236,7 @@ const Project = () => {
           Interpretation: Quick improvements in living conditions
         </div>
 
-        <div>
+        <div style={{fontSize: "1.1rem"}}>
           🏛 Governance ODA
           <br />
           Effect: Short-term negative impact (−0.41)
@@ -248,26 +248,24 @@ const Project = () => {
 
         <br>
         </br>
-        
-        <div>
-        🧩 Institutional Amplifier
-          <br />
-          Regulatory Quality (RQ) strengthens both the magnitude and durability of ODA effects across sectors.
+
+        <div style={{ fontSize: "1.1rem"}}>
+          <span style={{ fontWeight: 700 }}>🧩 Institutional Amplifier</span><br />
+          <span style={{ fontWeight: 400 }}>
+            Regulatory Quality (RQ) strengthens both the magnitude and durability of ODA effects across sectors.
+          </span>
         </div>
 
-        <br>
-        </br>
-        
-        <div>
-        🎯 Takeaway for Policymakers
-          <br />
-          ODA effectiveness depends on sector-specific time horizons
-          <br />
-          Short-term outcomes and long-term gains must be planned differently
-          <br />
-          Institutional quality is critical for sustainable impact
+        <div style={{ fontSize: "1.1rem"}}>
+          <span style={{ fontWeight: 700 }}>🎯 Takeaway for Policymakers</span><br />
+          <span style={{ fontWeight: 400 }}>
+            ODA effectiveness depends on sector-specific time horizons
+            <br />
+            Short-term outcomes and long-term gains must be planned differently
+            <br />
+            Institutional quality is critical for sustainable impact
+          </span>
         </div>
-        
       </P.Con>
 
 
