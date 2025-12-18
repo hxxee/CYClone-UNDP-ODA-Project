@@ -189,7 +189,9 @@ const Project = () => {
           LifeSim: Evidence-Based Insights for ODA Optimization
         </div>
         <div>
-          LifeSim is a data-driven framework that explains how ODA investments affect life expectancy in Ethiopia across key sectors, accounting for time-lagged effects. 
+          LifeSim is a data-driven framework that explains how ODA investments affect life expectancy in Ethiopia
+          <br />
+          across key sectors, accounting for time-lagged effects. 
         </div>
         
         <br>
@@ -197,8 +199,7 @@ const Project = () => {
         
         <div style={{ fontSize: "1.1rem", fontWeight: 1000 }}>
           🔍 Model Overview
-        </div>
-        <div>
+          <br />
           Method: Dynamic Linear Model (DLM) with OLS-HAC 
           <br />
           Performance: R² = 0.851
@@ -224,9 +225,6 @@ const Project = () => {
           Interpretation: Benefits emerge after infrastructure and service expansion
         </div>
         
-        <br>
-        </br>
-        
         <div>
           🌱 Social & Environmental ODA
           <br />
@@ -237,9 +235,6 @@ const Project = () => {
           Interpretation: Quick improvements in living conditions
         </div>
 
-        <br>
-        </br>
-        
         <div>
           🏛 Governance ODA
           <br />
@@ -250,6 +245,9 @@ const Project = () => {
           Interpretation: Temporary inefficiencies from institutional restructuring
         </div>
 
+        <br>
+        </br>
+        
         <div>
         🧩 Institutional Amplifier
           <br />
