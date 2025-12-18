@@ -216,7 +216,7 @@ const Project = () => {
         <div style={{ fontSize: "1.1rem", fontWeight: 1000 }}>
           📊 Key Sectoral Findings
         </div>
-        <div>
+        <div style={{fontSize: "1.1rem"}}>
           🏥 Health ODA
           <br />
           Effect: Strong positive impact (+1.08) 
