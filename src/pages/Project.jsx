@@ -186,81 +186,90 @@ const Project = () => {
       <P.Conclusion>Conclusion</P.Conclusion>
       <P.Con>
         <div style={{ fontSize: "1.1rem", fontWeight: 1000 }}>
-          LifeSim: An Evidence-Based Framework for ODA Optimization
+          LifeSim: Evidence-Based Insights for ODA Optimization
         </div>
         <div>
-          LifeSim demonstrates how ODA interventions influence life expectancy in Ethiopia across multiple sectors. 
-        </div>
-        <div>
-          Our predictive system utilizes a Dynamic Linear Model (DLM) optimized with OLS-HAC (R²=0.851), providing a robust, 
-          <br />
-          statistically sound framework to analyze the dynamic, lagged relationship between ODA and life expectancy. 
-        </div>
-        <div>
-          The model effectively explains approximately 76% of the variability in life expectancy changes,
-          <br />
-          ensuring high confidence in its policy recommendations.
-        </div>
-        <br>
-        </br>
-        <div style={{ fontSize: "1.1rem", fontWeight: 1000 }}>
-          Key Findings and Lag Structure
-        </div>
-        <div>
-          Our predictive model clearly captures the dynamic relationship between Health ODA, 
-          <br />
-          Social/Environmental ODA, and Governance ODA and their impact on changes in life expectancy. 
-        </div>
-        <div>
-          The most critical insight lies in the distinct time lags required for the effects of ODA across different sectors to materialize.
-        </div>
-        <div>
-          Health ODA demonstrates an overwhelmingly strong positive effect (Coefficient: approximately +1.08)
-          <br />
-          but only after a two-year lag (Lag 2). 
-        </div>
-        <div>
-        This impact is highly statistically significant. 
-          <br />
-        This suggests that ODA investment requires a medium-term horizon for medical infrastructure build-out
-          <br />
-          and health service expansion to fully translate into improved life expectancy.
-        </div>
-        <div>
-          Social/Environmental ODA shows a significant positive impact (Coefficient: approximately +0.52)
-          <br />
-          immediately upon input (Lag 0). 
-        </div>
-        <div>
-          This effect is also highly statistically significant, reflecting the quick, 
-          <br />
-          visible gains in quality of life through improved hygiene and environmental conditions.
-        </div>
-        <div>
-          In contrast, Governance ODA exhibits a short-term negative effect (Coefficient: approximately -0.41) one year later (Lag 1). 
-        </div>
-        <div>
-          This effect is statistically significant and can be interpreted as a temporary loss of efficiency 
-          <br />
-          due to the reorganization costs or restructuring of administrative bodies.
-        </div>
-        <div>
-          Finally, institutional quality, specifically Regulatory Quality (RQ), acts as the institutional foundation
-          <br />
-          that amplifies the magnitude and sustainability of ODA effectiveness.
-        </div>
-        <div>
-          This evidence-based framework supports policymakers in planning and optimizing ODA strategies
-          <br />
-          for sustainable development outcomes.
+          LifeSim is a data-driven framework that explains how ODA investments affect life expectancy in Ethiopia across key sectors, accounting for time-lagged effects. 
         </div>
         
-          
+        <br>
+        </br>
+        
+        <div style={{ fontSize: "1.1rem", fontWeight: 1000 }}>
+          🔍 Model Overview
+        </div>
+        <div>
+          Method: Dynamic Linear Model (DLM) with OLS-HAC 
+          <br />
+          Performance: R² = 0.851
+          <br />
+          Explanatory Power: ~76% of life expectancy variation explained
+          <br />
+           → High confidence in policy-relevant insights
+        </div>
+
+        <br>
+        </br>
+        
+        <div style={{ fontSize: "1.1rem", fontWeight: 1000 }}>
+          📊 Key Sectoral Findings
+        </div>
+        <div>
+          🏥 Health ODA
+          <br />
+          - Effect: Strong positive impact (+1.08) 
+          <br />
+          - Lag: 2 years
+          <br />
+          Interpretation: Benefits emerge after infrastructure and service expansion
+        </div>
+        
+        <br>
+        </br>
+        
+        <div>
+          🌱 Social & Environmental ODA
+          <br />
+          - Effect: Positive impact (+0.52)
+          <br />
+          - Lag: Immediate (Lag 0)
+          <br />
+          Interpretation: Quick improvements in living conditions
+        </div>
+
+        <br>
+        </br>
+        
+        <div>
+          🏛 Governance ODA
+          <br />
+          - Effect: Short-term negative impact (−0.41)
+          <br />
+          - Lag: 1 year
+          <br />
+          Interpretation: Temporary inefficiencies from institutional restructuring
+        </div>
+
+        <div>
+        🧩 Institutional Amplifier
+          <br />
+          Regulatory Quality (RQ) strengthens both the magnitude and durability of ODA effects across sectors.
+        </div>
+
+        <div>
+        🎯 Takeaway for Policymakers
+          <br />
+          ODA effectiveness depends on sector-specific time horizons
+          <br />
+          Short-term outcomes and long-term gains must be planned differently
+          <br />
+          Institutional quality is critical for sustainable impact
+        </div>
+        
       </P.Con>
 
 
 
-      
       <P.Github
         style={{ cursor: "pointer" }}
         onClick={() =>
