@@ -208,6 +208,7 @@ const Project = () => {
             <br />
              → High confidence in policy-relevant insights
           </span>
+        </div>
 
         <br>
         </br>
