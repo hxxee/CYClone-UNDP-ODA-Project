@@ -198,7 +198,7 @@ const Project = () => {
         </br>
         
         <div style={{ fontSize: "1.1rem"}}>
-          <span style={{ fontWeight: 900 }}>🔍 Model Overview</span><br />
+          <span style={{ fontWeight: 700 }}>🔍 Model Overview</span><br />
           <span style={{ fontWeight: 400 }}>
             Method: Dynamic Linear Model (DLM) with OLS-HAC 
             <br />
@@ -219,9 +219,9 @@ const Project = () => {
         <div>
           🏥 Health ODA
           <br />
-          - Effect: Strong positive impact (+1.08) 
+          Effect: Strong positive impact (+1.08) 
           <br />
-          - Lag: 2 years
+          Lag: 2 years
           <br />
           Interpretation: Benefits emerge after infrastructure and service expansion
         </div>
@@ -229,9 +229,9 @@ const Project = () => {
         <div>
           🌱 Social & Environmental ODA
           <br />
-          - Effect: Positive impact (+0.52)
+          Effect: Positive impact (+0.52)
           <br />
-          - Lag: Immediate (Lag 0)
+          Lag: Immediate (Lag 0)
           <br />
           Interpretation: Quick improvements in living conditions
         </div>
@@ -239,9 +239,9 @@ const Project = () => {
         <div>
           🏛 Governance ODA
           <br />
-          - Effect: Short-term negative impact (−0.41)
+          Effect: Short-term negative impact (−0.41)
           <br />
-          - Lag: 1 year
+          Lag: 1 year
           <br />
           Interpretation: Temporary inefficiencies from institutional restructuring
         </div>
